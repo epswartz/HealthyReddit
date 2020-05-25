@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./darkly.css">
     <title>Healthy Reddit</title>
   </head>
   <body>
-    <p id="display"></p>
+
+  <div class="row">
+	<div class="col-sm-2"></div>
+  <div class="col-sm-8" id="post-column">
+
+  </div>
+</div>
+
     <script type="text/javascript" src="index.js"></script>
+    <template id="post-card">
+      <div class="card bg-secondary">
+        <div class="col mt-2">
+            <div class="card-block">
+              <h4 class="card-title"></h4>
+              <p class="card-text"></p>
+              <a href="https://www.reddit.com" class="btn btn-primary mr-2 mb-2" role="button">Reddit Comments</a>
+              </div>
+        </div>
+      </div>
+      <content select="card"></content>
+    </template>
+
   </body>
 </html>
